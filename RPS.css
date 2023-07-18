@@ -1,0 +1,50 @@
+body{
+    background-color: #3E2F5B;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    min-width: 500px
+}
+.choice{
+    display: flex;
+	justify-content: center;
+    gap: 20px
+
+}
+.scores{
+    display: flex;
+	justify-content: center;
+    gap: 10px
+}
+img{
+    width: 300px;
+    height: 200px;
+    border: 5px double black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #E0CA3C;
+    transition:0.5s;
+}
+img:hover{
+    box-shadow: 5px 5px 15px rgb(51, 160, 32);
+    transform: translate(-10px, -10px);
+}
+h1, h2{
+    text-align: center;
+    color: white;
+}
+h1{
+    text-decoration: double underline ;
+}
+#new-game{
+    background-color: #E0CA3C;
+    margin: 50px;
+    padding: 10px 50px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    transition:0.5s;
+}
+#new-game:hover{
+    transform: translate(-5px, -5px);
+    background-color:#BA5C12;
+}

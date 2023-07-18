@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="RPS.css" />
+		<script src="RPS.js" defer></script>
+		<title>Rock Paper Scissors</title>
+	</head>
+	<body>
+		<head>
+			<h1>Rock Paper Scissors</h1>
+			<div class="rounds-wanted">
+				<!-- Pop up input asking how many rounds a player wants from js file -->
+				<!-- ================================================== -->
+			</div>
+			<div class="scores">
+				<!-- Keeps score of game -->
+                <div class="player">
+                    <h2>Player</h2>
+                </div>
+                <div class="computer">
+                    <h2>Computer</h2>
+                </div>
+			</div>
+			<div class="game-rounds">
+				<!-- Keeps cound of game rounds -->
+			</div>
+		</head>
+		<main>
+            <div class="choice">
+                <!-- Rock Paper Scissor options -->
+                <div class="rock">
+                    <h2>Rock</h2>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAA2FBMVEX////D0fYAAADF0/jAz/bI1/3J2P7G1fq/zvb6+vrv7+/39/fz8/P///3Ly8vb29vDw8Pi4uKCgoLS0tKdnZ2Ojo6zs7NLS0tGRkZZWVkhISF7e3uqqqrI1PZoaGja2tqVlZUZGRkrKys7OzszMzNWVlZycnKurq7Y4fXq7/hhYWHN2PURERFESFSqtdWdqMUyND2QmbR8g5twdoy2w+Pf5vg7P0hbYHCWoLpQVmOKlKuqtNMsLjVkaXwiIyl0e5EcIi4eHRgAAAYUGCKrr7wSEhbK0eIwMDpToW2UAAAPI0lEQVR4nO1dB3viOhaNJBds00uAhJ6E4JgSwPQA++Ztdv7/P1oVN9xg980MKPH53pd5AZPIJ1e3HF3Jd3cJEiRIkCBBggQJEiRIkCBBggQJEiRIkCBBggQJElwKVVW1a4/hlpCtVJ+7w26v1iqXrj2Wm4BS7kIPupXCtUd0ddzDAOq5aw/qqlDeGA29ar3VqtceLFYe1WsP7HpIPxEGXl4LlntVc+UXSspD/roDux40QknLN1MKRcpK5TpDujrIxMkGX1YfCSmtPz+eG0ADwqfwnKT9jEl5+8PDuQWku7AW+SYxlf4fHMyNoAy7uqJpipIJe7fxLX3KA5zIggBA0xjoWpCXPCbl9QrDuiZKcCUCBsyMsQjQQrK5b5a9deAYAReCYOg+VvD06V1nbNdCbSSBUwRYwZlK8Uqjuw7gVgR+CItTUqoQfpNCWc21S6UCnAJJlJHfVBTvlQWcwVxrlH8QpUrVqvSGh+V+OpZEFENK4xvEnnbNLwx8HMfSibU0T0ipYUNRCqVSKZe+1ph/M8pBsQTj57TpMRbB8PoUr7zyVMl/PXmywnSAaqtYqRT7L0+OwHbYAtfhCgOblELlwc9fK6/E/gre0KByUdbVi9Rco2Xd9cfaNRVBp++2W6FW9dz4Qqy0Sa0bEFvT2Ud2rxvTMZUmNpR03yEBm1WnUym+DO0X7q8x/N+COoSd0Dc05maGawnZacrdPSNgiF2IYxZKoVFnrNS/iDZZiqtz6bSCcysAIZnZTiuYsKXLjKyvoU324UvMuxpVHDeAkILQiHzTj1jUeKUuqPM7xvinca7ILfXwnS4xKYySpxBR0oJC49fjrx7gn0f2rGym9Rkp8gr/W4wNLjkqbv/C0V0H5QuqOeJrR9IMf22cuVIhU417bbLVJV8VTdcXi8FgsND1dFBbI1nr5hPCC4It4Y93bfKpqg8MIKQEBymhOdB9V+VpULmo7CP8cZ6o9PaiENRLBMPHCrnTC3UkEr/5Xm9/PgYlJEpL80RcUyCshn3cb1AEOPzEhffbx8tMDuUEgJRXMulEhOyBX6wleONcXXmcyzjzQDIG8qlrAnBvOMpxDowQTtK4sOa5IGxsJBmZkynGegeAfCI7OvJAGXbDtaNFKmz25PmOPdl/Hd89Ff/muBM8QlLKoBcpQ1gO//hAAGEvtyDkVn9TO88BIaS7nyDHxwiUlFcII5S0geDX9CkK3BY+SidUHcKZ/NRhhZLyFDkVDHxJmOt4hA9cepR2jzFQqzTy7UKhULovF22t+n3iiCYGromiZkLGCC7+UKh8ygYsN+37h54tMiVkBWxSBm/RJYxhyW8B9GH91w73TyBL5LJyqIFnaYffYcyyOXkcLScoTeKIw0JPgcNkVsXW8BgZGwpUh55QUsRVdFqqUNbCcpS7Kn9etn+mUssSKWQqAYDMGNeQZrVSmLXdx3Q73SZyZ30glUKwpYhH+BQZQnTKiRA2eTTuJs9jVBLmAa6Ff5gIxSlJA2Yng7D3+hf8iluCZvcFZJS0vqDQdSXj8ws4Mi3FLXyIXvlsstDUDHsvz9nkyVJnougD40RLMha64lsV3n7ElC56ygrXYZMLe3Gu8vvOUMtog2ZATUqlmgPdc4NUiY9eyCLZCYpyKHdvfKVt9ZZigKC+Rv/mAvD0alXjJGclBeTJFEVx0uCrw+uvrRzOiMVL087X83HLP9jDisetTBdNQ5CDD79l8L8JcBKlrtmsAMZKK0ZG1DCt0ruJojhRelwpS6zfEyEkiqIkSfirKOPvTm1Fpxl69LqfIeCE7lOI5AQ7lOgP3x4wJwhJwJzM5vsVxn4+W49NIIleXlLGXTGml4/ka/J2RAwugpMyV7IsHEtgsvIKbFQg2Mx2QPK0a5kxBQAt/9ByJkbGHRzxeVo8hhOcd4TisJrItviI0/pIZShDUlhcMrOm6/CrClxlbfUfEQobpWXLVDaEPiPT8wxN18TVB81PjIirht3fdQO/HlkmvNYb+TZLyBQ1l73v1C3hDQ6nRL2Xp3AYka9laPGHS+Y5nTqh9Q7GMz+ZbIncdz2sU7GQL9LtkXBjykBaRiZdGp1b0ohNnQh3QgIPL6Wx2o1trWlT8fEwlszIal+jtZ88wSUiiHYnZLMCL235fQjfYpMplTRMfO62UVv/GCVIOMA1dTyhOhtBmZcEpXDBEne6hS1lGVHDMUqAtIcHSokQtmZMcc9LFViEwwuuIqr+MPRembYGxCm0zCRy6nDDida7bKBqDY4GIXe7YJQQNX/Jdj9FTh1uOMlduvWmjQNt0x9RNMOixDxAK1+LjDr8cNK4VCbNwb2IUw/vHWcWluiCwBLCGQs6oSIbAy+cFC/NGVRrbhhUj8xkMsrCFuZoq+zIWiiMnjqYfz7izluMlniKLjTZ5BCaA4ymI8xRK/lkb4YvF1uocJKf1HqXbkDqw72zhVTwyHIi8SVwZ6lSMVOHmzy2Fr2C5QOuitbBBkBEgrC9bgoiVtAtPHEitL0cLt5QgkvCieRnxFxRSuzX3d1fIeBFkG1BM8YDnIDkbTNR9jICZqQY6u4c+4mJxDhycdJvUYE7IZB2hEMhJvGxlqhWK8uiZB5Zb4rrZ0AqZnbcx6m5t4RXklekwjLUIAS6YWc4n46BuZvOD0xd6duZCXUnMR8nGzq4SFBycIPoWsUFrAjNTUCFq7U1OHE12yiJjYD2D/JgKbjeoZmF0DzLiiIgtD1lpJonydzOw0m0b2rDHtn6xUM4dkxfQIP4VIVUwKJ5PNiE/F2kKZjq5CYxsuMd8VwdIl/1OIjHWfjgBFIQONzEC8OKNWNsLMvZ1LQa17S/ph5OIj+PDbJ0VxhysfFLeYbuPYEUCN1GQGB3UiAkTXHtIyPbebzNXR8bJxT8rdOGKB78bMfSx5y/NTAWaX8/DqbEc4n0wZwQmwaNpetPotPYJ3gkdoWzYQ7ah1UYOPdFYP047tgz2sDbeCBvqQ+xErSCVRxSO4tKdXByYtL3ypCHJq4i7Fp1vnzCCzlqa6ETDAyQ8nKGTBp/7XXhxsIlLCoYP8CVwFZ3qvDisvN6SEM4Z252Ip1u2QF2I9fpq5hB6oPcKOO+lQpf1qpAOLY4KXCxQbDCdEMEDiPTz0oo0I7Zic1JRvcYSphHyZECIGWZR5GL8xDZznL83wjOTfE8K+KM+RPHTjKGayghHgXHtqGJbE7UuJ64m8G9paYi8Yj/7zwrVtzxaGrxhtKnbtyRm/jo9qvbqrs0OcDD7MwMEteQntrmEQYyHjcbMBQcajb4esH+/pWL3nvs9w6sJ0kGewg/53GsyOaQpXlesSRjOKQ0ffkHtsIDDWzub+OiOacB4YrFHiROSEWz2UkRU4jorx80oTlJ0BTnAl+CT6SoMaHQ0RFUTjYc193MDdHzGcgUkoO0IGnyCVkl7GtbSzuGcvLGq6PWOpxoPT4alsgGHqcjVDTnVEHbbE3k7fNDsmjuiQLJTOo09croTl7nmVRkO8faWjS1X0s/8MEJMfFPJ0dHknn8mwoCo+OENEASSLK5poo0278frIHd4GP3FhRePAK2w4kavrH/BoEzt3e3cMGsbK1GyOH7Zj+fzeab5Sf93i6jg6WcWycKA3JGSBm6e+Y82UyBnzNRsEtZeieKiHb7YMuffRhZ6IKf5uxjEGTj30RsdPZWerzMPT/b0jV8DyPvXnyERHkyP3gZ2Y+tIC2EKyV0WZ30Y5sz8rnPkzPubNmxyFHzcKGLzeC0pRxbi2ROtvPNZrSaTyfISVv8SYiDjG6AyWxJGZx7zkLEST9kV+BMnwdR1gLpgNwAf/xFONxIpA3fa0Mx5b7CNvi/+9JhqWwd0axGnQBxmyCdshvhgtI4bpVM60FsJlN0mtygZtfSkhpc1MUuSNK5DFhKALF/Z90Q1vDDNwdJLW1Vwy88CG1eEFK6Zvx2HiNaUM3c6U0BoUNAzkTCD0uwV/lY4/Eif9I6EYpFUMGmwIQMiCYnzeHB/wPEud2QU+ZqKwIDJWXmP5bbC7Lg4X9UROZO0wcgRdITeee0hTqQx44TiTxQ5pZR6tJcK27+MGGfPEQjk1EURdMXRtNWbRF4h+/+Q/HFEWyzn57nb+oQqD2Sk+/89xXgBTQZwImKLe6hdwWZQto6kkmNly4UHxT6aKqZdGbnZCjw7ZOu0RMgEw6tUJXno7UgDPQYoffxBXq1n5K1rap5KAEftgKL87nn697ZP0CeCihHEBuAAmAdf7tT+0Jo4+z86XCxXBwFlc6fw9qfe8VSAo4wsNKK5L2jl+Qgh4HYC3Ym92h3qVtB0njpKE4upD18sNdznrh/2kihyhST8SWLg0iisiQ8Sr6X927wffwKZzFbz3ygIn4cL0iWzDm9dOujhBzR3HZ/2gNPFXEENOuo/4+ZCUgPaAgdCBfA5nbELvMlNbI5cikp8dGPcwFy9rMf3udrzAtRUUh/LGmRRbIokh3985F1ydyX/Iq7A+zaE4f0bXF12kccPE/E+BjtZ9PJbjwem+Pxbree7TfuBvaVb/EQyTMIq8y9ZrT/HHiPOacoPAa1aj/mvgQP+9yRfdh7RjfMn5Djw0FDod1X4whZrYGPERkdbfdBNj8JxJy+4CPz8uWXwIN24I/DZruTTp/hRJZBpp8Qvmnk4CpDEBDd4vM1/GsQhVK+/Nh6gj+Xo9Fqvp3sTMyHL6dDIphis3jK32kLekyTOCaUcNCw9U+gwo0l5AeiM1n7IK3Wh23TsLaDiTuyfnjumQnc48W7F8OTqmBCaKbyPnWLR4luBPvylJA1j1PJlp7DhDMVusS837nrGEiafw9K6EFtY++Or9nROnro53HiXdgRTZrPfXFfwkCe+uVd8RhtNvvZdjKWT7qbkLimMgyvytr/iA6Ew7E7fajH9ddDrIEHPn/BvCQcL5gU/zZSXwSa0icLvn2t7DUOaZK/zSIFWyRNWG8Bh4s5/z9UcsfL0KZRJEs7Viv32ud/0FeCSjP9o6/SIY2AYM1shJ9+pF+GNJWxP4+kZ9R6ZCC2EGFntzbVv41z9YI9rhVutmOBJPuyOd6ubEGl9lVrvnPI2g8dOeCicPTuPMKW7rL9tmiE6Sn9b+ZaA7j3PRX77Vtk8udQuO/Xnh+63V7trcz5mtYvhaKq6u3vfUyQIEGCBAkSJEiQIEGCBAkSJEiQIEGCBAkSJEhwC/gv2mQoQPGP7IsAAAAASUVORK5CYII="
+                        alt="rock"
+                    />
+                </div>
+                <div class="paper">
+                    <h2>Paper</h2>
+                    <img src="paper.jpg" alt="paper" />
+                </div>
+                <div class="Scissor">
+                    <h2>Scissors</h2>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYFmjtKlLvqGgQg2Bj2p6Qj8C991fD-nLzA&usqp=CAU"
+                        alt="Sissors"
+                    />
+                </div>
+            </div>
+        </main>
+		<footer>
+            <div class="new-game">
+                <button id="new-game">New Game</button>
+            </div>
+        </footer>
+	</body>
+</html>
