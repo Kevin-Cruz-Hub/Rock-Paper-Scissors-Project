@@ -7,7 +7,7 @@
     justify-content: center;
     align-items:center;   
     border-radius: 20px;
-    box-shadow: 15px 5px 10px black;
+    box-shadow: 15px 15px 10px black;
     gap: 10px;
     min-width: 1200px;    
 }
@@ -104,10 +104,14 @@ button{
     background-color: rgb(6, 24, 1);
     color: white;
     border: 2px solid yellow;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.3s;
 }
-button:active{
-    transform: translate(10deg);
+button:hover{
+    transform: translate(3px, 3px);
+    border: 5px double #e25b40;
 }
+
 .total-games{
     display: block;
 }

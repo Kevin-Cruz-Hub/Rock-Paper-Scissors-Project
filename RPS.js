@@ -14,14 +14,8 @@ function getComputerChoice(){
     const choices = ['Rock','Paper','Scissors']
     let randIndex = Math.floor(Math.random() * 3)
     return choices[randIndex]
-
-    // const cpuChoice = document.createElement('p')
-    // cpuChoice.textContent = `X\nComputer chose: ${choices[randIndex]}`
-    // result_div.append(cpuChoice)
-
-    // num+=1
-    // totalGames_div.textContent = `Round: ${num}`
 }
+
 function game(userChoice){
     const computerChoice = getComputerChoice()
     if(userChoice === computerChoice){
@@ -101,8 +95,21 @@ function game(userChoice){
         result_div.append(cpuChoice)
         result_div.append(result)
     }
-    
 
+
+    const winning = document.querySelector('.winning')
+    winning.style.fontSize = '1.5rem'
+    winning.style.margin = '10px';
+    scoreBoard_div.style.height='170px'
+    if(compScore > userScore){
+        winning.textContent = 'Computer is in the lead'
+    }else if(compScore === userScore){
+        winning.textContent = 'You are both tied'
+    }else{
+        winning.textContent = 'Player is in the lead.'
+    }
+
+    
 }
 
 // When you click on the buttons
@@ -113,11 +120,11 @@ function main(){
     })
     paper_div.addEventListener('click', function(){
         game('Paper')
-        getComputerChoice()
+        
     })
     scissors_div.addEventListener('click', function(){
         game('Scissors')
-        getComputerChoice()
+        
     })
 }
 
