@@ -106,7 +106,7 @@ function game(userChoice){
     }else if(compScore === userScore){
         winning.textContent = 'You are both tied'
     }else{
-        winning.textContent = 'Player is in the lead.'
+        winning.textContent = 'User is in the lead.'
     }
 
     

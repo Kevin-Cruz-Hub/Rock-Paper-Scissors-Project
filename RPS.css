@@ -9,7 +9,8 @@
     border-radius: 20px;
     box-shadow: 15px 15px 10px black;
     gap: 10px;
-    min-width: 1200px;    
+    min-width: 1200px; 
+    
 }
 .choice img{
     height: 250px;
@@ -77,6 +78,8 @@ header h1{
     font-size: 40px;
     color: white;
     text-align: center;
+    
+    position: relative;
 }
 .choice{
     display: inline-block;
@@ -104,14 +107,18 @@ button{
     background-color: rgb(6, 24, 1);
     color: white;
     border: 2px solid yellow;
-    box-shadow: 5px 5px 10px black;
-    transition: 0.3s;
+    transition: 0.2s;
+    cursor: pointer;
 }
-button:hover{
-    transform: translate(3px, 3px);
-    border: 5px double #e25b40;
+button:active{
+    box-shadow: 2px 2px 5px black;
 }
 
 .total-games{
     display: block;
+}
+
+/* img animations */
+.image{
+    
 }
