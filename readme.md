@@ -1,24 +1,6 @@
 <DOCTYPE html>
 <html>
 <head>
-<style>
-    /* .img{
-        height:300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    img{
-        border-radius: 100%;
-    }
-    li{
-        list-style-type: none;
-    }
-    .icons{
-        height: 50px;
-        border-radius: 100%:
-    } */
-</style>
 </head>
 <body>
 <div style='list-style-type: none;'>
