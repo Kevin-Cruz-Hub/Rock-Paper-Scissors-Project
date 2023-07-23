@@ -48,6 +48,8 @@ Within the game Included is a scoreboard to keep track of the the player and com
 <li style='list-style-type: none;'>scoreboard for longest draw streak</li>
 <li style='list-style-type: none;'>Add a light and dark mode</li>
 </ul>
+<h2>The Game</h2>
+<a href='RPS.html'>Rock Paper Scissors</a>
 </body>
 </html>
 
