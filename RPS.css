@@ -165,7 +165,7 @@ button{
     background-color: rgb(6, 24, 1);
     color: white;
     border: 2px solid yellow;
-    transition: 0.2s;
+    transition: 0.1s;
     cursor: pointer;
 }
 button:active{
