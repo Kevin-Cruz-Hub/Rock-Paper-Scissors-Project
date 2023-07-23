@@ -21,8 +21,8 @@
 </style>
 </head>
 <body>
-<div class='img'>
-<img src='rounded RPS.png'></div>
+<div style='height:300px; display: flex; align-items: center; justify-content: center;'>
+<img style='border-radius: 100%;' src='https://media.istockphoto.com/id/1056840214/vector/rock-paper-scissors-vector-illustration.jpg?s=612x612&w=0&k=20&c=6KEBfon5f9BXXhLiu9JfOk6EHsM193SiWMcqDjN1jqM='></div>
 <h1>Rock Paper Scissors readme file</h1>
 <h2>Summary</h2>
 <p>This project is a simple Rock-Paper Scissors game:
