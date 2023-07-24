@@ -49,7 +49,8 @@ Within the game Included is a scoreboard to keep track of the the player and com
 <li style='list-style-type: none;'>Add a light and dark mode</li>
 </ul>
 <h2>The Game</h2>
-<a href='RPS.html'>Rock Paper Scissors</a>
+<a href='RPS.html'><img src='layout.png'></a>
+
 </body>
 </html>
 
